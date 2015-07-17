@@ -5,6 +5,14 @@ Author: Lisa Reimeir
 */
 
 /******************************************
+/* VARIABLES
+/*******************************************/
+
+$max-width:960px;
+$half-width:480px;
+$third-width:320px;
+
+/******************************************
 /* COLOURS
 /*******************************************/
 
@@ -16,6 +24,8 @@ Author: Lisa Reimeir
 
 * {
      box-sizing: border-box;
+     padding: 0;
+	 margin: 0;
 }
 
 /******************************************
@@ -30,8 +40,13 @@ Author: Lisa Reimeir
 /*******************************************/
 
 .site-container {
-	max-width: 960px;
+	max-width: $max-width;
 	margin: 0 auto;
+}
+
+.container-full-width {
+	max-width: 100%;
+	margin: 0 auto; 
 }
 
 
@@ -48,22 +63,22 @@ Author: Lisa Reimeir
 }
 
 .grid-column-whole {
-  width: 960px;
+  width: $max-width;
 }
 
 .grid-column-half {
-  width: 480px;
+  width: $half-width;
 }
 
 .grid-column-third {
-  width: 320px;
+  width: $third-width;
 }
 
 .site-header {
 
-}
-.site-header h1 {
-	color:red;
+	h1 {
+		color:blue;
+	}
 }
 .site-content {
 

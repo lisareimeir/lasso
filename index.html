@@ -7,13 +7,26 @@
 		<title>Lasso</title>
 		
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/flickity.css" media="screen">
+		<link rel="stylesheet" href="css/scssmain.css">
+		<script src="js/flickity.pkgd.min.js"></script>
 	</head>
 	<body>
-		<div class="site-container">
-			<header class="site-header">
+		<header class="site-header container-full-width">
 				<h1>Site title</h1>
-			</header>
+				<div class="gallery js-flickity" data-flickity-options='{ "autoPlay": 1500, "freeScroll": true, "wrapAround": true,  "setGallerySize": false }'>
+				 	<div class="gallery-cell">
+				 		<div class="gallery-cell-overlay">asdasfdsfsd
+				 		</div>
+				 		<img src="images/header/hurtlocker.jpg" alt="orange tree" />
+				 	</div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+					<div class="gallery-cell"></div>
+				</div>
+		</header>
+		<div class="site-container">		
 			<main class="site-content">
 
 			</main>
